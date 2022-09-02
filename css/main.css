@@ -1,5 +1,4 @@
 .main {
-    border: solid 1px gray;
     padding: 16px;
     background: #4a5274;
     padding: 45px;
@@ -14,20 +13,20 @@
 .red-diamond {
     border: solid red;
     display: inline-block;
-    height: 30px;
+    height: 25px;
     text-align: center;
     transform:rotate(45deg);
-    width:30px;
+    width:25px;
     margin: 15px;
 }
 
 .blue-diamond {
     border: solid blue;
     display: inline-block;
-    height: 30px;
+    height: 25px;
     text-align: center;
     transform:rotate(45deg);
-    width:30px;
+    width:25px;
     margin: 15px;
 }
 
@@ -49,4 +48,5 @@
 
 .refresh {
     margin-left: 30px;
+    margin-top: 10px;
 }

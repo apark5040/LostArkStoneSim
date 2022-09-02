@@ -1,6 +1,6 @@
 # Lost Ark Ability Stone Simulator
 
-This project is a simulator for faceting ability stones similar to how it is done in the video game `Lost Ark`. The purpose of this project is to create a web component that will eventually be pushed to a CDN. Once that is done, anyone can use the component in any front-end app as long as they import the CDN into their project. Not sure if it will work or not, this is just a test. 
+This project is a simulator for faceting ability stones similar to how it is done in the video game `Lost Ark`. The purpose of this project is to create a web component that will eventually be pushed to a CDN or maybe npm package. Once that is done, anyone can use the component in any front-end app as long as they import it into their project. Not sure if it will work or not, this is just a test.
 
 ## Setup
 
