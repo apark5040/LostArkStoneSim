@@ -1,6 +1,23 @@
 # Lost Ark Ability Stone Simulator
 
-This project is a simulator for faceting ability stones similar to how it is done in the video game `Lost Ark`. The purpose of this project is to create a web component that will eventually be pushed to a CDN or maybe npm package. Once that is done, anyone can use the component in any front-end app as long as they import it into their project. Not sure if it will work or not, this is just a test.
+This project is a simulator for faceting ability stones similar to how it is done in the video game `Lost Ark`. The project was created using the Lit framework in an effort to learn how web components work. This component can be imported through the JSDelivr CDN and used in your code.
+
+# How to import using CDN
+
+To import this file through CDN, add this in the `<Head>` element:
+
+```
+<script
+    type="module"
+    src="https://cdn.jsdelivr.net/gh/apark5040/LostArkStoneSim@{Version_Number}/bundle/ability-stone-facet.bundled.js"
+></script>
+```
+
+Then you call the component 
+
+```
+<ability-stone-facet></ability-stone-facet>
+```
 
 ## Setup
 
@@ -86,13 +103,13 @@ To enable the site go to the GitHub settings and change the GitHub Pages &quot;S
 To build the site, run:
 
 ```bash
-npm run docs
+npm run bundle:build
 ```
 
 To serve the site locally, run:
 
 ```bash
-npm run docs:serve
+npm run serve
 ```
 
 To watch the site files, and re-build automatically, run:
