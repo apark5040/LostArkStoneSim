@@ -20,10 +20,30 @@ export class AbilityStoneFacet extends LitElement {
     this.blue = 0;
     this.red = 0;
     this.numOfDiamonds = 10;
+
+    var link = document.createElement('script');
+    link.integrity =
+      'sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa';
+    link.crossOrigin = 'anonymous';
+
+    link.src =
+      'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js';
+    document.head.appendChild(link);
   }
 
   render() {
     return html`
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="./css/main.css" />
       <div class="main card container border border-5 border-dark">
         <div class="row first-row">
           <div class="col-6">
@@ -79,20 +99,64 @@ export class AbilityStoneFacet extends LitElement {
                 Nodes
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" @click="${() => this.updateDiamonds(4)}">4</a></li>
-                <li><a class="dropdown-item" @click="${() => this.updateDiamonds(5)}">5</a></li>
-                <li><a class="dropdown-item" @click="${() => this.updateDiamonds(6)}">6</a></li>
-                <li><a class="dropdown-item" @click="${() => this.updateDiamonds(7)}">7</a></li>
-                <li><a class="dropdown-item" @click="${() => this.updateDiamonds(8)}">8</a></li>
-                <li><a class="dropdown-item" @click="${() => this.updateDiamonds(9)}">9</a></li>
-                <li><a class="dropdown-item" @click="${() => this.updateDiamonds(10)}">10</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    @click="${() => this.updateDiamonds(4)}"
+                    >4</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    @click="${() => this.updateDiamonds(5)}"
+                    >5</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    @click="${() => this.updateDiamonds(6)}"
+                    >6</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    @click="${() => this.updateDiamonds(7)}"
+                    >7</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    @click="${() => this.updateDiamonds(8)}"
+                    >8</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    @click="${() => this.updateDiamonds(9)}"
+                    >9</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    @click="${() => this.updateDiamonds(10)}"
+                    >10</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
         </div>
         <br />
         <div class="row third-row">
-          <div class="col-6">${this.renderDiamonds('red', this.numOfDiamonds)}</div>
+          <div class="col-6">
+            ${this.renderDiamonds('red', this.numOfDiamonds)}
+          </div>
           <div class="btn-column col-2">
             <button
               @click="${() => this._onClick('third', 'red')}"

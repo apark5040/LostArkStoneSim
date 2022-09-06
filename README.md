@@ -4,10 +4,6 @@ This project is a simulator for faceting ability stones similar to how it is don
 
 # How to import using CDN
 
-This component current uses Bootstrap for the majority of its css. As of right now, you must import it in your project in order to use it. Will add bootstrap into bundle so that users do not have to import it...if that is possible.
-
-https://getbootstrap.com/docs/5.2/getting-started/download/
-
 To import this file through CDN, add this in the `<Head>` element:
 
 ```
@@ -17,7 +13,7 @@ To import this file through CDN, add this in the `<Head>` element:
 ></script>
 ```
 
-Then you call the component 
+Then you call the component
 
 ```
 <ability-stone-facet></ability-stone-facet>
