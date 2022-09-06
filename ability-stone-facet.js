@@ -1,4 +1,4 @@
-import {LitElement, html} from 'lit';
+import {LitElement, html, css} from 'lit';
 
 export class AbilityStoneFacet extends LitElement {
   createRenderRoot() {
@@ -43,7 +43,60 @@ export class AbilityStoneFacet extends LitElement {
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
         crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="./css/main.css" />
+      <style>
+        .main {
+          padding: 16px;
+          background: #4a5274;
+          padding: 45px;
+        }
+
+        .text {
+          color: white;
+          text-align: center;
+          margin-top: 10px;
+        }
+
+        .red-diamond {
+          border: solid red;
+          display: inline-block;
+          height: 25px;
+          text-align: center;
+          transform: rotate(45deg);
+          width: 25px;
+          margin: 15px;
+        }
+
+        .blue-diamond {
+          border: solid blue;
+          display: inline-block;
+          height: 25px;
+          text-align: center;
+          transform: rotate(45deg);
+          width: 25px;
+          margin: 15px;
+        }
+
+        .btn-column {
+          margin-top: 10px;
+        }
+
+        .red-success {
+          background: red;
+        }
+
+        .blue-success {
+          background: blue;
+        }
+
+        .failure {
+          background: #c2bbb5;
+        }
+
+        .refresh {
+          margin-left: 30px;
+          margin-top: 10px;
+        }
+      </style>
       <div class="main card container border border-5 border-dark">
         <div class="row first-row">
           <div class="col-6">
